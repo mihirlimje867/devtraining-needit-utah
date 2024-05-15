@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic">
+    <sys_cs_topic action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability>true</applicability>
+        <autopilot_topic>true</autopilot_topic>
+        <cb_topic_id display_value="create test topic">c0f67f9b830a0210e2fe5e20ceaad3a4</cb_topic_id>
+        <channels/>
+        <definition>{"id":"c0f67f9b830a0210e2fe5e20ceaad3a4","name":"create test topic","system_topic":false,"autopilot_topic":true,"vendor_id":"c2f0b8f187033200246ddd4c97cb0bb9","description":"this is a test topic for virtual agent","applicability":"true","categories":[],"key_phrases":["create test topic","NeedIt Request.","need something","mihir"],"variables":[{"name":"LiveAgent_application","type":"java.lang.Object"},{"name":"__segment_trigger_eed7f1e912f147a98b10e67bd74d7085_done","type":"java.lang.Object","init_value":"false"},{"name":"previous_graph_node","type":"java.lang.Object"}],"fields":[{"type":"Reference","table_name":"sys_user","name":"user","unique":false,"key_phrases":[],"mask_type":"NONE","list":false,"expert_mode":false,"static_enum_list":[]},{"type":"Boolean","name":"RootDecisionBranch_58bbff93db4a02105793d75a3209889c","unique":false,"default_value":"true","key_phrases":[],"mask_type":"NONE","list":false,"expert_mode":false,"static_enum_list":[]},{"type":"String","name":"__silent_TerminateGoal_b27951fedf9742b7bcb68a939edae9d1","unique":false,"key_phrases":[],"mask_type":"NONE","list":false,"expert_mode":false,"static_enum_list":[],"encrypt_if_secure":true},{"type":"String","name":"__silent_Branch_RootDecisionBranch_18bbff930e4a0210fa919f89be72e69c","unique":false,"key_phrases":[],"mask_type":"NONE","list":false,"expert_mode":false,"static_enum_list":[],"encrypt_if_secure":true},{"type":"String","name":"__silent_StartGoal_61d63f8cc042473fb2fed9d63b11042a","unique":false,"key_phrases":[],"mask_type":"NONE","list":false,"expert_mode":false,"static_enum_list":[],"encrypt_if_secure":true},{"type":"String","name":"__silent_Decision_RootDecision_d4bbff93974a021070275a29ac8c339c","unique":false,"key_phrases":[],"mask_type":"NONE","list":false,"expert_mode":false,"static_enum_list":[],"encrypt_if_secure":true}],"actions":[],"tasks":[{"type":"Consumer to system","show_as_button":true,"name":"primary","description":"primary","applicability":"vaVars.__segment_trigger_eed7f1e912f147a98b10e67bd74d7085_done==false &amp;&amp; true","mode":"Qmode","key_phrases":[],"greeting_msg":"vaInputs.initialize(\"user\");vaInputs.initialize(\"RootDecisionBranch_58bbff93db4a02105793d75a3209889c\");vaInputs.initialize(\"__silent_Branch_RootDecisionBranch_18bbff930e4a0210fa919f89be72e69c\");vaInputs.initialize(\"__silent_Decision_RootDecision_d4bbff93974a021070275a29ac8c339c\");vaInputs.initialize(\"__silent_StartGoal_61d63f8cc042473fb2fed9d63b11042a\");vaInputs.initialize(\"__silent_TerminateGoal_b27951fedf9742b7bcb68a939edae9d1\");null;","fields":[{"name":"__silent_Decision_RootDecision_d4bbff93974a021070275a29ac8c339c","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"RootDecision_for_goal_primary___RootDecision_d4bbff93974a021070275a29ac8c339c\";vaInputs.__silent_Decision_RootDecision_d4bbff93974a021070275a29ac8c339c=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"RootDecision_for_goal_primary___RootDecision_d4bbff93974a021070275a29ac8c339c\";var ackMsg=null;ackMsg=null;vaInputs.RootDecisionBranch_58bbff93db4a02105793d75a3209889c=true;(function() {vaInputs.__silent_Branch_RootDecisionBranch_18bbff930e4a0210fa919f89be72e69c.reset();})();ackMsg;"},{"name":"__silent_Branch_RootDecisionBranch_18bbff930e4a0210fa919f89be72e69c","applicable":"vaVars.previous_graph_node==\"RootDecision_for_goal_primary___RootDecision_d4bbff93974a021070275a29ac8c339c\" &amp;&amp; ((vaInputs.RootDecisionBranch_58bbff93db4a02105793d75a3209889c.getValue() == true))","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"RootDecisionBranch_18bbff930e4a0210fa919f89be72e69c___RootDecisionBranch_18bbff930e4a0210fa919f89be72e69c\";vaInputs.__silent_Branch_RootDecisionBranch_18bbff930e4a0210fa919f89be72e69c=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"RootDecisionBranch_18bbff930e4a0210fa919f89be72e69c___RootDecisionBranch_18bbff930e4a0210fa919f89be72e69c\";var ackMsg=null;ackMsg=null;(function() {vaInputs.__silent_StartGoal_61d63f8cc042473fb2fed9d63b11042a.reset();})();ackMsg;"},{"name":"__silent_StartGoal_61d63f8cc042473fb2fed9d63b11042a","applicable":"vaVars.previous_graph_node==\"RootDecisionBranch_18bbff930e4a0210fa919f89be72e69c___RootDecisionBranch_18bbff930e4a0210fa919f89be72e69c\"","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"Start___61d63f8cc042473fb2fed9d63b11042a\";vaInputs.__silent_StartGoal_61d63f8cc042473fb2fed9d63b11042a=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"Start___61d63f8cc042473fb2fed9d63b11042a\";var ackMsg=null;ackMsg=gs.getMessageLang(\"va:topic:c0f67f9b830a0210e2fe5e20ceaad3a4:node:61d63f8cc042473fb2fed9d63b11042a:field:GreetingMsg\", vaContext.getRequesterLang());(function() {vaInputs.__silent_TerminateGoal_b27951fedf9742b7bcb68a939edae9d1.reset();})();ackMsg;"},{"name":"__silent_TerminateGoal_b27951fedf9742b7bcb68a939edae9d1","applicable":"vaVars.previous_graph_node==\"Start___61d63f8cc042473fb2fed9d63b11042a\"","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"End___b27951fedf9742b7bcb68a939edae9d1\";vaInputs.__silent_TerminateGoal_b27951fedf9742b7bcb68a939edae9d1=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"End___b27951fedf9742b7bcb68a939edae9d1\";var ackMsg=null;ackMsg=null;vaVars.__segment_trigger_eed7f1e912f147a98b10e67bd74d7085_done=true;ackMsg;"}],"variables_update":[],"confirmation_msg":"gs.getMessageLang(\"va:topic:c0f67f9b830a0210e2fe5e20ceaad3a4:node:b27951fedf9742b7bcb68a939edae9d1:field:ConfirmationMsg\", vaContext.getRequesterLang())"}],"roles":[],"active":true,"published":true,"library":false,"expose_on_palette":false,"palette_label":"","flexible_conversation_switching":false,"design_categories":[{"name":"test category","visible":true,"sysId":"e346ffdb830a0210e2fe5e20ceaad3a0"}],"nlu_provider":"","nlu_model":"","nlu_intent":"","topic_type":"STANDARD","channels":[],"triggerable_by_notification":false,"secure_custom_input_control":false,"foundational":false,"modelType":"nlu_keyword","score":0.0,"visible":true,"discoverable":true,"sys_scope":"6ead8e780f603200cd674f8ce1050ed1","sys_domain":"global","title":"create test topic","nlu_intent_label":"","nlu_model_label":"","dialog_acts_enabled":false,"modify_confirmation_enabled":false}</definition>
+        <description>this is a test topic for virtual agent</description>
+        <design_category>e346ffdb830a0210e2fe5e20ceaad3a0</design_category>
+        <dialog_acts_enabled>false</dialog_acts_enabled>
+        <discoverable>true</discoverable>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <foundational>false</foundational>
+        <input_variables>[]</input_variables>
+        <is_system_topic>false</is_system_topic>
+        <key_phrases>create test topic NeedIt Request. need something mihir</key_phrases>
+        <last_published_on>2024-05-14 11:13:11</last_published_on>
+        <library>false</library>
+        <library_usage>null</library_usage>
+        <metaphone/>
+        <model_type>nlu_keyword</model_type>
+        <modify_confirmation_enabled>false</modify_confirmation_enabled>
+        <name>create test topic</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <published>true</published>
+        <roles/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <sys_class_name>sys_cs_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-14 11:13:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>14bbff93834a0210e2fe5e20ceaad39d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>create test topic</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cs_topic_14bbff93834a0210e2fe5e20ceaad39d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-14 11:13:11</sys_updated_on>
+        <title>create test topic</title>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <vendor display_value="ServiceNow">c2f0b8f187033200246ddd4c97cb0bb9</vendor>
+        <visible>true</visible>
+    </sys_cs_topic>
+    <sys_translated_text action="delete_multiple" query="documentkey=14bbff93834a0210e2fe5e20ceaad39d"/>
+</record_update>
